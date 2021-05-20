@@ -1,0 +1,46 @@
+﻿<Window x:Class="TheaterScenario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheaterScenario"
+        mc:Ignorable="d"
+        Title="Programming Concepts A: Theater" Height="400" Width="500" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Thickness x:Key="ButtonMargin">5</Thickness>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="5">
+            <!-- Start AMC Theater buttons -->
+            <Button x:Name="newAmcTheaterButton" Content="New AMC Theater" Click="newAmcTheaterButton_Click"/>
+            <Button x:Name="presentAvengersInfinityWarButton" Content="Present Avengers: Infinity War" Click="presentAvengersInfinityWarButton_Click"/>
+            <!-- End AMC Theater buttons -->
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </StackPanel.Resources>
+        </StackPanel>
+        <Separator Grid.Column="1">
+            <Separator.LayoutTransform>
+                <RotateTransform Angle="90"/>
+            </Separator.LayoutTransform>
+        </Separator>
+        <StackPanel Grid.Column="2" Margin="5">
+            <!-- Start Marcus Theater buttons -->
+            <Button x:Name="newMarcusTheaterButton" Content="New Marcus Theater" Click="newMarcusTheaterButton_Click"/>
+            <Button x:Name="presentLegoBatmanButton" Content="Present The LEGO Batman Movie" Click="presentLegoBatmanButton_Click"/>
+            <!-- End Marcus Theater buttons -->
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </StackPanel.Resources>
+        </StackPanel>
+    </Grid>
+</Window>

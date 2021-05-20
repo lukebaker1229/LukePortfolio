@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TheaterScenario</name>
+    </assembly>
+    <members>
+        <member name="T:TheaterScenario.Movie">
+            <summary>
+            The class which is used to represent a guest.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Movie.Title">
+            <summary>
+            title.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Movie.ViewLicenses">
+            <summary>
+            title.
+            </summary>
+        </member>
+        <member name="T:TheaterScenario.Person">
+            <summary>
+            The class which is used to represent a guest.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Person.Cash">
+            <summary>
+            The cash that the person is carrying.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Person.Name">
+            <summary>
+            The name of the person.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Person.Ticket">
+            <summary>
+            The person's ticket.
+            </summary>
+        </member>
+        <member name="M:TheaterScenario.Person.RemoveMoney(System.Decimal)">
+            <summary>
+            blah.
+            </summary>
+            <param>blah.</param>
+            <returns></returns>
+        </member>
+        <member name="T:TheaterScenario.ScreeningRoom">
+            <summary>
+            The class which is used to represent a screening room.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.ScreeningRoom.NumberOfSeatsOccupied">
+            <summary>
+            The number of guests currently in the screening room.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.ScreeningRoom.SeatingCapacity">
+            <summary>
+            The number of guests that can be admitted to the screening room.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.ScreeningRoom.FeaturedMovie">
+            <summary>
+            blah.
+            </summary>
+        </member>
+        <member name="M:TheaterScenario.ScreeningRoom.PresentMovie">
+            <summary>
+            blag.
+            </summary>
+        </member>
+        <member name="T:TheaterScenario.Theater">
+            <summary>
+            The class which is used to represent a theater.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Theater.Name">
+            <summary>
+            The name of the theater.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Theater.NumberOfGuestsAdmitted">
+            <summary>
+            The number of guests admitted.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Theater.ScreeningRoom">
+            <summary>
+            The screening room at the movie theater.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Theater.TicketPrice">
+            <summary>
+            The price of a ticket.
+            </summary>
+        </member>
+        <member name="T:TheaterScenario.Ticket">
+            <summary>
+            The class which is used to represent a movie ticket.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Ticket.MovieTitle">
+            <summary>
+            The title of the movie.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.Ticket.Price">
+            <summary>
+            The price paid for the ticket.
+            </summary>
+        </member>
+        <member name="T:TheaterScenario.App">
+            <summary>
+            Contains interaction logic for App.xaml.
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:TheaterScenario.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:TheaterScenario.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:TheaterScenario.MainWindow">
+            <summary>
+            Contains interaction logic for MainWindow.xaml.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.MainWindow.AmcTheater">
+            <summary>
+            The AMC Theater.
+            </summary>
+        </member>
+        <member name="F:TheaterScenario.MainWindow.MarcusTheater">
+            <summary>
+            The Marcus Theater.
+            </summary>
+        </member>
+        <member name="M:TheaterScenario.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the MainWindow class.
+            </summary>
+        </member>
+        <member name="M:TheaterScenario.MainWindow.newAmcTheaterButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Creates the AMC Theater and related objects.
+            </summary>
+            <param name="sender">The object that initiated the event.</param>
+            <param name="e">The event arguments for the event.</param>
+        </member>
+        <member name="M:TheaterScenario.MainWindow.newMarcusTheaterButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Creates the Marcus Theater and related objects.
+            </summary>
+            <param name="sender">The object that initiated the event.</param>
+            <param name="e">The event arguments for the event.</param>
+        </member>
+        <member name="M:TheaterScenario.MainWindow.presentAvengersInfinityWarButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Presents the movie, "Avengers: Infinity War".
+            </summary>
+            <param name="sender">The object that initiated the event.</param>
+            <param name="e">The event arguments for the event.</param>
+        </member>
+        <member name="M:TheaterScenario.MainWindow.presentLegoBatmanButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Presents the movie, "The LEGO Batman Movie".
+            </summary>
+            <param name="sender">The object that initiated the event.</param>
+            <param name="e">The event arguments for the event.</param>
+        </member>
+        <member name="M:TheaterScenario.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TheaterScenario.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TheaterScenario.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TheaterScenario.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
